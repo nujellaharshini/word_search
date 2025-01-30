@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
     int i, j;
     FILE *fptr;
 
-    // Open file for reading puzzle
+    // Open file for reading puzzle 
     fptr = fopen(argv[1], "r");
     if (fptr == NULL) {
         printf("Cannot Open Puzzle File!\n");
@@ -97,7 +97,7 @@ void convertToUpper(char* word){
 void resetPrintPath(int** array){
     for (int i = 0; i < bSize; i++){
         for (int j = 0; j < bSize; j++){
-            *(*(array + i) + j) = 0;
+            *(*(array + i) + j) = 0; 
         }
     }
 }
